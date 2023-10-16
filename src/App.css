@@ -4,40 +4,67 @@ body {
 }
 
 .score-card {
-  background-color: hsl(241, 81%, 54%);
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   color: white;
   border-radius: 0 0 20px 20px;
 }
 
-/* .score-circle {
-  background-color: cadetblue;
-  width: 40%;
-  height: 40%;
-  border-radius: 50%;
-} */
+.result {
+  margin: 0 auto;
+  padding: 0.8rem 0;
+}
 
+.score-circle {
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.score-circle h1 {
+  margin: 0 auto;
+}
+
+.score-circle p {
+  margin: 0 auto;
+}
+
+.summary-section img {
+  margin: 0.8rem;
+}
 .reaction {
   background-color: hsla(0, 100%, 67%, 10%);
   display: flex;
   border-radius: 5px;
+  width: 90%;
+  margin: 1rem auto;
 }
 
 .memory {
   background-color: hsla(39, 100%, 56%, 10%);
   display: flex;
   border-radius: 5px;
+  width: 90%;
+  margin: 1rem auto;
 }
 
 .verbal {
   background-color: hsla(166, 100%, 37%, 10%);
   display: flex;
   border-radius: 5px;
+  width: 90%;
+  margin: 1rem auto;
 }
 
 .visual {
   background-color: hsla(234, 85%, 45%, 10%);
   display: flex;
   border-radius: 5px;
+  width: 90%;
+  margin: 1rem auto;
 }
 
 button {
