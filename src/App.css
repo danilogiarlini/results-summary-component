@@ -1,6 +1,7 @@
 body {
   font-family: "Hanken Grotesk", "sans-sarif";
   text-align: center;
+  height: 100vh;
 }
 
 .score-card {
@@ -35,12 +36,31 @@ body {
 .summary-section img {
   margin: 0.8rem;
 }
+
+#summary {
+  width: 90%;
+  margin: 0.8rem auto;
+  text-align: left;
+  font-size: 1.2rem;
+}
 .reaction {
   background-color: hsla(0, 100%, 67%, 10%);
   display: flex;
+  justify-content: space-between;
   border-radius: 5px;
   width: 90%;
   margin: 1rem auto;
+}
+
+.reaction p:nth-of-type(1) {
+  color: hsl(0, 100%, 67%);
+  font-weight: 700;
+  flex-grow: 2;
+  text-align: left;
+}
+
+.section-score {
+  margin-right: 0.8rem;
 }
 
 .memory {
@@ -51,12 +71,26 @@ body {
   margin: 1rem auto;
 }
 
+.memory p:nth-of-type(1) {
+  color: hsl(39, 100%, 56%);
+  font-weight: 700;
+  flex-grow: 2;
+  text-align: left;
+}
+
 .verbal {
   background-color: hsla(166, 100%, 37%, 10%);
   display: flex;
   border-radius: 5px;
   width: 90%;
   margin: 1rem auto;
+}
+
+.verbal p:nth-of-type(1) {
+  color: hsl(166, 100%, 37%);
+  font-weight: 700;
+  flex-grow: 2;
+  text-align: left;
 }
 
 .visual {
@@ -67,6 +101,13 @@ body {
   margin: 1rem auto;
 }
 
+.visual p:nth-of-type(1) {
+  color: hsl(234, 85%, 45%);
+  font-weight: 700;
+  flex-grow: 2;
+  text-align: left;
+}
+
 button {
   border: none;
   background-color: hsl(224, 30%, 27%);
@@ -75,3 +116,16 @@ button {
   padding: 1rem 5rem;
   border-radius: 24px;
 }
+
+button:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  cursor: pointer;
+}
+
+/* @media (min-width: 375px) {
+  body {
+    display: flex;
+    width: 200px;
+    height: 150px;
+  }
+} */

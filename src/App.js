@@ -21,22 +21,34 @@ function App() {
         </div>
       </div>
       <div className="summary-section">
-        <h2>Summary</h2>
+        <h2 id="summary">Summary</h2>
         <div className="reaction">
           <img src={reactionIcon} alt="lightning" />
-          <p>Reaction</p> <p>80</p> <p>/ 100</p>
+          <p>Reaction</p>{" "}
+          <p className="section-score">
+            <strong>80</strong> / 100
+          </p>
         </div>
         <div className="memory">
           <img src={memoryIcon} alt="brain" />
-          <p>Memory</p> <p>92</p> <p>/ 100</p>
+          <p>Memory</p>{" "}
+          <p className="section-score">
+            <strong>92</strong> / 100
+          </p>
         </div>
         <div className="verbal">
           <img src={verbalIcon} alt="comic" />
-          <p>Verbal</p> <p>61</p> <p>/ 100</p>
+          <p>Verbal</p>{" "}
+          <p className="section-score">
+            <strong>61</strong> / 100
+          </p>
         </div>
         <div className="visual">
           <img src={visualIcon} alt="eye" />
-          <p>Visual</p> <p>72</p> <p>/ 100</p>
+          <p>Visual</p>{" "}
+          <p className="section-score">
+            <strong>72</strong> / 100
+          </p>
         </div>
         <button>Continue</button>
       </div>
